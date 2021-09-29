@@ -12,7 +12,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 48px;
   font-weight: 700;
-  color: white;
+  color: #fafafa;
   margin: 0;
 }
 
@@ -21,7 +21,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 32px;
   font-weight: 700;
-  color: white;
+  color: #fafafa;
   margin: 0;
 }
 
@@ -30,7 +30,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 400;
-  color: white;
+  color: #fafafa;
   margin: 0;
 }
 
@@ -63,11 +63,50 @@ body {
   justify-content: center;
   align-items: center;
 }
+@media (min-width: 960px) {
+  .about-me {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    background-image: url("../images/about-me-background-low-opacity.jpg");
+    /* background-repeat: no-repeat; */
+    background-size: 50%;
+  }
+}
+
+@media (min-width: 960px) {
+  .about-me__container {
+    max-width: 700px;
+    margin-left: 150px;
+  }
+}
 
 .about-me__subtitle {
   margin-bottom: 36px;
 }
+@media (min-width: 960px) {
+  .about-me__subtitle {
+    color: #2c2c2c;
+  }
+}
 
 .about-me__text {
   margin-top: 10px;
+}
+@media (min-width: 960px) {
+  .about-me__text {
+    color: #2c2c2c;
+    font-weight: 500;
+  }
+}
+
+.about-me__img {
+  display: none;
+}
+@media (min-width: 960px) {
+  .about-me__img {
+    display: initial;
+    height: 100%;
+  }
 }
