@@ -1,0 +1,140 @@
+.header {
+  padding: 15px 30px;
+  width: 100%;
+  position: absolute;
+  z-index: 100;
+}
+@media (min-width: 960px) {
+  .header {
+    padding: 40px 80px;
+  }
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-go-home {
+  height: 80px;
+}
+@media (min-width: 960px) {
+  .logo-go-home {
+    height: 100px;
+  }
+}
+
+.header__logo {
+  height: 55px;
+}
+.logo-go-home:active .header__logo {
+  height: 70px;
+}
+@media (min-width: 960px) {
+  .header__logo {
+    height: 85px;
+    transition: all 0.2s;
+  }
+  .logo-go-home:hover .header__logo {
+    height: 90px;
+  }
+}
+
+.burger-menu:active .burger-menu__line {
+  width: 45px;
+  height: 9px;
+}
+.burger-menu__line {
+  width: 36px;
+  height: 6px;
+  background-color: white;
+  margin-bottom: 7px;
+}
+@media (min-width: 960px) {
+  .burger-menu {
+    display: none;
+  }
+}
+
+.navigation-card {
+  background-color: #161616;
+  position: absolute;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+}
+@media (min-width: 960px) {
+  .navigation-card {
+    background-color: initial;
+    display: flex;
+    position: static;
+    height: 55px;
+  }
+}
+
+.navigation-card__anchors-container {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 960px) {
+  .navigation-card__anchors-container {
+    flex-direction: row;
+  }
+}
+
+.navigation-card__page-anchor {
+  text-decoration: none;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 48px;
+  margin-bottom: 58px;
+  font-weight: 700;
+}
+@media (min-width: 960px) {
+  .navigation-card__page-anchor {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    margin: 0;
+    margin-left: 80px;
+    transition: all 0.2s;
+  }
+}
+@media (min-width: 960px) {
+  .navigation-card__page-anchor:hover {
+    font-size: 28px;
+    color: rgb(253, 242, 84);
+  }
+}
+
+.navigation-card__page-anchor:active {
+  font-size: 50px;
+  color: rgb(253, 242, 84);
+}
+@media (min-width: 960px) {
+  .navigation-card__page-anchor:active {
+    font-size: 28px;
+  }
+}
+
+.navigation-card__close-window-container:active .navigation-card__close-window {
+  height: 50px;
+  width: 50px;
+}
+
+.navigation-card__close-window {
+  position: absolute;
+  top: 35px;
+  right: 35px;
+  height: 37px;
+  width: 37px;
+}
+@media (min-width: 960px) {
+  .navigation-card__close-window {
+    display: none;
+  }
+}
