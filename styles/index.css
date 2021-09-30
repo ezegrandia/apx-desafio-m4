@@ -1,3 +1,4 @@
+/* general properties */
 * {
   box-sizing: border-box;
 }
@@ -34,6 +35,7 @@ body {
   margin: 0;
 }
 
+/* hello section properties */
 .hello-section {
   width: 100%;
   height: 616px;
@@ -55,13 +57,15 @@ body {
   margin-top: 11px;
 }
 
+/* about-me section properties */
 .about-me {
-  background-color: #141414;
   padding: 30px;
-  height: 538px;
+  height: 570px;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url("../images/about-me-background-dark.png");
+  background-size: cover;
 }
 @media (min-width: 960px) {
   .about-me {
@@ -69,9 +73,9 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 0;
-    background-image: url("../images/about-me-background-low-opacity.jpg");
-    /* background-repeat: no-repeat; */
+    background-image: url("../images/about-me-background-white.png");
     background-size: 50%;
+    /* background-size: 50%; */
   }
 }
 
@@ -110,3 +114,5 @@ body {
     height: 100%;
   }
 }
+
+/* services section properties */
