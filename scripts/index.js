@@ -60,6 +60,9 @@ function processInfoContentful(apiData) {
     const imgsArray = apiData.includes.Asset;
 
     itemsArray.forEach((item, i) => {
+      objParams.title = item.fields.title;
+      objParams.description = item.fields.text;
+      objParams.contentType = item.sys.contentType.sys.id;
       objParams.url = item.fields.url;
 
       itemImgId.item = i;
