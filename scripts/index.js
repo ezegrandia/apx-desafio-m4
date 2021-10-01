@@ -2,8 +2,13 @@ function main() {
   const headerContainerEl = document.querySelector(
     ".header-component-container"
   );
-
   insertHeaderComponent(headerContainerEl);
+
+  const formContainerEl = document.querySelector(".form-component-container");
+  insertFormComponent(formContainerEl);
+
+  sendFormInfo();
+  showLabelsFormEls();
 }
 
 function connectToApiContentful() {

@@ -8,10 +8,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./components/header.css">
-  <script defer src="./components/header.js"></script>
-  <link rel="stylesheet" href="./components/form.css">
-  <script defer src="./components/form.js"></script>
+  <link rel="stylesheet" href="./components/header/header.css">
+  <script defer src="./components/header/header.js"></script>
+  <link rel="stylesheet" href="./components/form/form.css">
+  <script defer src="./components/form/form.js"></script>
   <link rel="stylesheet" href="./styles/index.css">
   <script defer src="./scripts/index.js"></script>
 </head>
@@ -19,14 +19,14 @@
   <section class="header-component-container"></section>
   <section class="hello-section">
     <div class="hello-section__container">
-      <h1 class="hello-section__title title">Title</h1>
-      <h2 class="hello-section__subtitle subtitle">Subtitle</h2>
+      <h1 class="hello-section__title title"></h1>
+      <h2 class="hello-section__subtitle subtitle"></h2>
     </div>
   </section>
   <section class="about-me">
     <div class="about-me__container">
-      <h2 class="about-me__subtitle subtitle">Title</h2>
-      <p class="about-me__text paragraph about-me__first-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad sequi beatae earum error aperiam, non, veritatis molestiae, veniam ea iste nemo eum nihil ab ut ipsam ipsa! Itaque, provident voluptas.</p>
+      <h2 class="about-me__subtitle subtitle"></h2>
+      <p class="about-me__text paragraph about-me__first-text"></p>
     </div>
     <img class="about-me__img" src="./images/profile-img.png" alt="personal image">
   </section>
@@ -35,39 +35,13 @@
     <div class="service-item-container">
     </div>
   </section>
-  <form class="form">
-    <a class="form__title-container" href="./contacto.html">
-      <h2 class="form__title subtitle">Escribime</h2>
-    </a>
-    <div class="form__fieldsets-container">
-      <fieldset class="form__fieldset">
-        <label class="form__label">
-          <p class="form__label-text"></p>
-          <input class="form__input input" type="text" required="required" placeholder="Nombre">
-        </label>
-      </fieldset>
-      <fieldset class="form__fieldset">
-        <label class="form__label">
-          <p class="form__label-text"></p>
-          <input class="form__input input" type="email" required="required" placeholder="Email">
-        </label>
-      </fieldset>
-      <fieldset class="form__fieldset">
-        <label class="form__label">
-          <p class="form__label-text"></p>
-          <textarea class="form__textarea input" required="required" placeholder="Mensaje" name="" id="" cols="30" rows="10"></textarea>
-        </label>
-      </fieldset>
-      <div class="form__submit-button-container"></div>
-      <button class="form__submit-button" type="submit">Enviar</button>
-    </div>
-  </form>
+  <section class="form-component-container"></section>
   <template class="services-item-template">
     <div class="services__anchors-container">
       <a class="services__anchor" href="./servicios.html">
         <img class="services__img" src="./images/design-services-2d.svg" alt="Iconon ilustrativo del servicio ofrecido">
-        <h3 class="services__subtitle second-subtitle">Diseño 2D</h3>
-        <p class="services__text paragraph">Mis estudios previos y mi experiencia laboral con softwares digitales, me permitio adquirir nociones básicas de Diseño Gráfico, Bidimensional y el Manejo de conocimientos y tareas tales como: Desarrollo de Planos Técnicos, Grillas, Plantillas, Layouts y Maquetas Digitales, Previews, Tarjetas Personales, Branding, Vectores, Cartelería Corporativa, Infografía de Productos, Presentaciones Gráficas y Digitales, Desarrollo de Ideas, Dibujo y Bocetado, Photoshop basico, Illustrator avanzado.</p>
+        <h3 class="services__subtitle second-subtitle"></h3>
+        <p class="services__text paragraph"></p>
       </a>
     </div>
   </template>
