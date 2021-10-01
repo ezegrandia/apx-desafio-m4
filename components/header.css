@@ -41,6 +41,10 @@
   }
 }
 
+.burger-menu {
+  cursor: pointer;
+}
+
 .burger-menu:active .burger-menu__line {
   width: 45px;
   height: 9px;
@@ -132,6 +136,7 @@
   right: 35px;
   height: 37px;
   width: 37px;
+  cursor: pointer;
 }
 @media (min-width: 960px) {
   .navigation-card__close-window {

@@ -1,11 +1,3 @@
-function main() {
-  const headerContainerEl = document.querySelector(
-    ".header-component-container"
-  );
-
-  insertHeaderComponent(headerContainerEl);
-}
-
 function connectToApiServices() {
   fetch(
     "https://cdn.contentful.com/spaces/9eckq975r12y/environments/master/entries?access_token=moNXdOHXyYw91xx7JXsj766e4MeK1k8lpX4-0S-JWa0&content_type=apxM4Services&order=sys.createdAt"
@@ -55,9 +47,6 @@ function addServiceItem(params = {}) {
   const containerTemplateEl = document.querySelector(".service-item-container");
   const itemTemplateEl = document.querySelector(".services-item-template");
 
-  const subtitle = itemTemplateEl.content.querySelector(".services__subtitle");
-  console.log(subtitle.textContent);
-
   itemTemplateEl.content.querySelector(".services__subtitle").textContent =
     params.title;
   itemTemplateEl.content.querySelector(".services__text").textContent =
@@ -70,4 +59,6 @@ function addServiceItem(params = {}) {
 }
 
 connectToApiServices();
+main();
+
 main();

@@ -26,6 +26,15 @@ body {
   margin: 0;
 }
 
+.second-subtitle {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #fafafa;
+  margin: 0;
+}
+
 .paragraph {
   text-align: center;
   font-family: "Poppins", sans-serif;
@@ -102,6 +111,7 @@ body {
   .about-me__text {
     color: #2c2c2c;
     font-weight: 500;
+    background-color: rgba(250, 250, 250, 0.5);
   }
 }
 
@@ -116,3 +126,91 @@ body {
 }
 
 /* services section properties */
+.services {
+  padding: 60px 60px 0 60px;
+  background-color: #fff;
+}
+@media (min-width: 960px) {
+  .services {
+    padding: 60px 40px 0 60px;
+  }
+}
+@media (min-width: 1300px) {
+  .services {
+    padding: 60px 10px 0 60px;
+  }
+}
+
+.services__title {
+  position: relative;
+  top: 20px;
+}
+@media (min-width: 960px) {
+  .services__title {
+    font-size: 48px;
+  }
+}
+
+.services__title,
+.services__subtitle,
+.services__text {
+  color: #2c2c2c;
+}
+
+@media (min-width: 960px) {
+  .service-item-container {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.services__anchors-container {
+  margin-top: 100px;
+  margin-bottom: 60px;
+}
+@media (min-width: 960px) {
+  .services__anchors-container {
+    max-width: 450px;
+    margin-right: 20px;
+  }
+}
+@media (min-width: 1300px) {
+  .services__anchors-container {
+    margin-right: 50px;
+  }
+}
+
+.services__anchor {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.services__img {
+  margin: 0 auto;
+  margin-bottom: 23px;
+  max-width: 450px;
+  border-radius: 6px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+@media (min-width: 960px) {
+  .services__img {
+    box-shadow: none;
+    width: 100%;
+    height: 150px;
+  }
+}
+@media (min-width: 1300px) {
+  .services__img {
+    height: 220px;
+  }
+}
+@media (min-width: 960px) {
+  .services__img:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  }
+}
+
+.services__text {
+  margin-top: 7px;
+}
