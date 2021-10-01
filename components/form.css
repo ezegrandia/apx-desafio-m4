@@ -11,7 +11,6 @@
 }
 
 .form__title-container {
-  margin-bottom: 36px;
   text-decoration: none;
 }
 @media (min-width: 960px) {
@@ -19,6 +18,13 @@
     margin-right: 77px;
     cursor: pointer;
   }
+}
+
+.form__title-container:active .form__title {
+  color: rgb(253, 242, 84);
+}
+.form__title-container > .form__title {
+  margin-bottom: 36px;
 }
 @media (min-width: 960px) {
   .form__title-container:hover .form__title {
@@ -72,4 +78,13 @@
   font-weight: 700;
   margin-top: 60px;
   border: none;
+  cursor: pointer;
+}
+.form__submit-button:active {
+  color: rgb(253, 242, 84);
+}
+@media (min-width: 960px) {
+  .form__submit-button:hover {
+    color: rgb(253, 242, 84);
+  }
 }
