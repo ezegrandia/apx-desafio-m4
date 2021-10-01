@@ -7,6 +7,11 @@ function main() {
   const formContainerEl = document.querySelector(".form-component-container");
   insertFormComponent(formContainerEl);
 
+  const footerContainerEl = document.querySelector(
+    ".footer-component-container"
+  );
+  insertFooterComponent(footerContainerEl);
+
   sendFormInfo();
   showLabelsFormEls();
 }
