@@ -4,8 +4,8 @@
 }
 @media (min-width: 960px) {
   .form {
-    /* display: flex; */
-    /* justify-content: center; */
+    display: flex;
+    justify-content: center;
   }
 }
 
