@@ -2,7 +2,7 @@
   background-color: #2c2c2c;
   display: flex;
   flex-direction: column;
-  padding: 100px 80px;
+  padding: 60px 80px;
   justify-content: center;
   align-items: center;
 }
@@ -26,10 +26,11 @@
 }
 @media (min-width: 960px) {
   .footer__logo-container {
-    height: 450px;
+    height: 300px;
     display: flex;
     align-items: center;
     margin-bottom: 0;
+    /* border: solid yellow; */
   }
 }
 
@@ -63,6 +64,7 @@
   align-items: center;
   height: 30px;
   margin-bottom: 20px;
+  color: #dbdbdb;
 }
 @media (min-width: 550px) {
   .footer__social-media {
@@ -102,6 +104,7 @@
 }
 
 .footer__social-media > .footer__social-media-text {
+  font-family: "Poppins", sans-serif;
   margin-right: 7px;
 }
 

@@ -5,10 +5,125 @@
 body {
   margin: 0;
   padding: 0;
+  /* background-color: #000000; */
 }
 
 .services {
-  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+}
+@media (min-width: 960px) {
+}
+
+.services__title-background {
+  padding: 0 31px;
   width: 100%;
-  height: 1254px;
+}
+@media (min-width: 960px) {
+  .services__title-background {
+    height: 60vh;
+    padding: 0 90px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(1, 22, 53, 1) 47%,
+      rgba(4, 72, 171, 1) 100%
+    );
+  }
+}
+
+.services__title {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+  margin-top: 171px;
+}
+
+.card-service-container {
+  padding: 0 42px;
+  padding-bottom: 120px;
+}
+@media (min-width: 960px) {
+  .card-service-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 40px 120px 90px;
+  }
+}
+
+.card-service {
+  display: flex;
+  flex-direction: column;
+  margin-top: 105px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 450px;
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.19),
+    0 6px 6px rgba(255, 255, 255, 0.23);
+}
+@media (min-width: 960px) {
+  .card-service {
+    height: 600px;
+    margin-right: 50px;
+    max-width: 450px;
+  }
+}
+@media (min-width: 960px) {
+  .card-service:hover {
+    box-shadow: 0 10px 20px rgba(255, 255, 0, 0.39),
+      0 6px 6px rgba(255, 255, 0, 0.43);
+  }
+}
+
+.card-service__img {
+  width: 100%;
+  border-radius: 10px;
+  height: 250px;
+  object-fit: cover;
+}
+@media (min-width: 440px) {
+  .card-service__img {
+    height: 350px;
+  }
+}
+@media (min-width: 960px) {
+  .card-service__img {
+    height: 350px;
+  }
+}
+
+.card-service__text-container {
+  padding: 0 10px;
+}
+
+.card-service__title {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #dbdbdb;
+  margin: 0;
+  margin-top: 15px;
+}
+
+.card-service__description {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #dbdbdb;
+  margin: 15px 0;
 }

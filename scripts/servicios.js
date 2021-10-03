@@ -2,13 +2,17 @@ function main() {
   const headerContainerEl = document.querySelector(
     ".header-component-container"
   );
-
   insertHeaderComponent(headerContainerEl);
+
+  const footerContainerEl = document.querySelector(
+    ".footer-component-container"
+  );
+  insertFooterComponent(footerContainerEl);
 }
 
 function connectToApiServices() {
   fetch(
-    "https://cdn.contentful.com/spaces/9eckq975r12y/environments/master/entries?access_token=moNXdOHXyYw91xx7JXsj766e4MeK1k8lpX4-0S-JWa0&content_type=apxM4Services&order=sys.createdAt"
+    "https://cdn.contentful.com/spaces/9eckq975r12y/environments/master/entries?access_token=moNXdOHXyYw91xx7JXsj766e4MeK1k8lpX4-0S-JWa0&content_type=apxM4ServicesPage&order=sys.createdAt"
   )
     .then((response) => response.json())
     .then((data) => dataProcess(data));
@@ -17,9 +21,6 @@ function connectToApiServices() {
 function dataProcess(apiData) {
   const itemsArray = apiData.items;
   const imgsArray = apiData.includes.Asset;
-
-  console.log(apiData, "soy apiData");
-  console.log(imgsArray, "soy imgs array");
 
   const objParams = {
     title: "",
@@ -36,7 +37,8 @@ function dataProcess(apiData) {
   itemsArray.forEach((item, i) => {
     objParams.title = item.fields.title;
     objParams.description = item.fields.text;
-    objParams.url = item.fields.url;
+    objParams.contentType = item.sys.contentType.sys.id;
+    // objParams.url = item.fields.url;
 
     itemImgId.item = i;
     itemImgId.id = item.fields.image.sys.id;
@@ -51,19 +53,17 @@ function dataProcess(apiData) {
   });
 }
 
-function addServiceItem(params = {}) {
-  const containerTemplateEl = document.querySelector(".service-item-container");
+function addServiceItem(params) {
+  const containerTemplateEl = document.querySelector(".card-service-container");
   const itemTemplateEl = document.querySelector(".services-item-template");
 
-  const subtitle = itemTemplateEl.content.querySelector(".services__subtitle");
-  console.log(subtitle.textContent);
-
-  itemTemplateEl.content.querySelector(".services__subtitle").textContent =
+  itemTemplateEl.content.querySelector(".card-service__title").textContent =
     params.title;
-  itemTemplateEl.content.querySelector(".services__text").textContent =
-    params.description;
-  itemTemplateEl.content.querySelector(".services__img").src = params.img;
-  itemTemplateEl.content.querySelector(".services__anchor").href = params.url;
+  itemTemplateEl.content.querySelector(
+    ".card-service__description"
+  ).textContent = params.description;
+  itemTemplateEl.content.querySelector(".card-service__img").src = params.img;
+  // itemTemplateEl.content.querySelector(".services__anchor").href = params.url;
 
   const clone = document.importNode(itemTemplateEl.content, true);
   containerTemplateEl.appendChild(clone);

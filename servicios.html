@@ -7,11 +7,29 @@
   <title>Servicios - Ezequiel Grandía</title>
   <link rel="stylesheet" href="./components/header/header.css">
   <script defer src="./components/header/header.js"></script>
+  <link rel="stylesheet" href="./components/footer/footer.css">
+  <script defer src="./components/footer/footer.js"></script>
   <link rel="stylesheet" href="./styles/servicios.css">
   <script defer src="./scripts/servicios.js"></script>
 </head>
 <body>
   <section class="header-component-container"></section>
-  <section class="services"></section>
+  <section class="services">
+    <div class="services__title-background">
+      <h2 class="services__title">Servicios</h2>
+    </div>
+    <div class="card-service-container">
+    </div>
+  </section>
+  <section class="footer-component-container"></section>
+  <template class="services-item-template">
+    <div class="card-service">
+      <img class="card-service__img" src="./images/services-2d.jpg" alt="2d service illustrative image">
+      <div class="card-service__text-container">
+        <h3 class="card-service__title">Title prueba</h3>
+        <p class="card-service__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus natus facere ipsam aliquam, laudantium ad, esse quisquam tenetur voluptates dolor voluptatem animi vel ea sit. Quisquam quos tenetur numquam natus!</p>
+      </div>
+    </div>
+  </template>
 </body>
 </html>
