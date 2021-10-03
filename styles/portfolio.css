@@ -5,10 +5,160 @@
 body {
   margin: 0;
   padding: 0;
+  /* background-color: #000000; */
 }
 
 .portfolio {
-  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+}
+@media (min-width: 960px) {
+}
+
+.portfolio__title-background {
+  padding: 0 31px;
   width: 100%;
-  height: 1254px;
+}
+@media (min-width: 960px) {
+  .portfolio__title-background {
+    height: 60vh;
+    padding: 0 90px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    background: rgb(4, 72, 171);
+    background: linear-gradient(
+      90deg,
+      rgba(4, 72, 171, 1) 0%,
+      rgba(1, 22, 53, 1) 46%,
+      rgba(0, 0, 0, 1) 100%
+    );
+  }
+}
+
+.portfolio__title {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+  margin-top: 171px;
+}
+
+.card-portfolio-container {
+  padding: 0 42px;
+  padding-bottom: 120px;
+}
+@media (min-width: 960px) {
+  .card-portfolio-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 40px 120px 90px;
+  }
+}
+
+.card-portfolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 105px;
+  border-radius: 10px;
+  width: 100%;
+  height: 600px;
+  max-width: 450px;
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.19),
+    0 6px 6px rgba(255, 255, 255, 0.23);
+  padding-bottom: 15px;
+}
+@media (min-width: 960px) {
+  .card-portfolio {
+    height: 600px;
+    margin-right: 50px;
+    max-width: 450px;
+  }
+}
+@media (min-width: 960px) {
+  .card-portfolio:hover {
+    box-shadow: 0 10px 20px rgba(255, 255, 0, 0.39),
+      0 6px 6px rgba(255, 255, 0, 0.43);
+  }
+}
+
+.card-portfolio__img {
+  width: 100%;
+  border-radius: 10px;
+  height: 250px;
+  object-fit: cover;
+  object-position: center;
+}
+@media (min-width: 440px) {
+  .card-portfolio__img {
+    height: 350px;
+  }
+}
+@media (min-width: 960px) {
+  .card-portfolio__img {
+    height: 350px;
+  }
+}
+
+.card-portfolio__text-container {
+  padding: 0 10px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-portfolio__title {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #dbdbdb;
+  margin: 0;
+  margin-top: 15px;
+}
+
+.card-portfolio__description {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #dbdbdb;
+  margin: 15px 0;
+}
+
+.card-portfolio__anchor-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  padding: 5px;
+}
+
+.card-portfolio__anchor {
+  text-decoration: none;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #fc6f50;
+}
+.card-portfolio__anchor:active {
+  font-size: 29px;
+}
+@media (min-width: 960px) {
+  .card-portfolio__anchor:hover {
+    font-size: 29px;
+  }
 }

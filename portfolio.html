@@ -7,11 +7,32 @@
   <title>Portfolio - Ezequiel Grandía</title>
   <link rel="stylesheet" href="./components/header/header.css">
   <script defer src="./components/header/header.js"></script>
+  <link rel="stylesheet" href="./components/footer/footer.css">
+  <script defer src="./components/footer/footer.js"></script>
   <link rel="stylesheet" href="./styles/portfolio.css">
   <script defer src="./scripts/portfolio.js"></script>
 </head>
 <body>
   <section class="header-component-container"></section>
-  <section class="portfolio"></section>
+  <section class="portfolio">
+    <div class="portfolio__title-background">
+      <h2 class="portfolio__title">Portfolio</h2>
+    </div>
+    <div class="card-portfolio-container">
+    </div>
+  </section>
+  <section class="footer-component-container"></section>
+  <template class="portfolio-item-template">
+    <div class="card-portfolio">
+      <img class="card-portfolio__img" src="./images/services-2d.jpg" alt="Portfolio illustrative image">
+      <div class="card-portfolio__text-container">
+        <h3 class="card-portfolio__title">Title prueba</h3>
+        <p class="card-portfolio__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus natus facere ipsam aliquam, laudantium ad, esse quisquam tenetur voluptates dolor voluptatem animi vel ea sit. Quisquam quos tenetur numquam natus!</p>
+      </div>
+      <div class="card-portfolio__anchor-container">
+        <a class="card-portfolio__anchor" href="" target="_blank">Ver más</a>
+      </div>
+    </div>
+  </template>
 </body>
 </html>
