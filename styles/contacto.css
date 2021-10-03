@@ -17,6 +17,13 @@ body {
     justify-content: center;
     padding-top: 296px;
     padding-bottom: 178px;
+    background: rgb(4, 72, 171);
+    background: linear-gradient(
+      90deg,
+      rgba(4, 72, 171, 1) 0%,
+      rgba(1, 22, 53, 1) 46%,
+      rgba(0, 0, 0, 1) 100%
+    );
   }
 }
 

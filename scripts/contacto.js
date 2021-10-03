@@ -15,6 +15,7 @@ function main() {
   const formTitleEl = document.querySelector(".form__title");
   formTitleEl.textContent = "Contacto";
 
+  sendFormInfo();
   showLabelsFormEls();
 }
 

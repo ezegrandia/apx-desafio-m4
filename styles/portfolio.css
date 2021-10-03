@@ -79,7 +79,7 @@ body {
 }
 @media (min-width: 960px) {
   .card-portfolio {
-    height: 650px;
+    height: 600px;
     margin-right: 50px;
     max-width: 450px;
   }
