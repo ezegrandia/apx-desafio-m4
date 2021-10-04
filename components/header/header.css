@@ -83,6 +83,7 @@
 .navigation-card__anchors-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 @media (min-width: 960px) {
   .navigation-card__anchors-container {
